@@ -1,0 +1,3 @@
+ollama
+sounddevice
+piper-tts
