@@ -1,9 +1,16 @@
 import agent
 import speak
+import gradio as gr
 
-while True:
-    otazka = input("Zeptej se na cokoliv: ")
-    odpoved = agent.ask(otazka)
+def dotaz_na_karla(otazka, dummy):
     
-    print(odpoved)
-    speak.speak(odpoved)
+    text = otazka["text"]
+    priloha = otazka["files"]
+    
+    odpoved = agent.ask(text, priloha)
+    yield odpoved
+
+
+gr.ChatInterface(fn=dotaz_na_karla, multimodal=True).launch()
+
+    

@@ -1,3 +1,4 @@
 ollama
 sounddevice
 piper-tts
+gradio
