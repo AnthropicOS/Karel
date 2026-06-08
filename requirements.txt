@@ -2,3 +2,4 @@ ollama
 sounddevice
 piper-tts
 gradio
+emoji

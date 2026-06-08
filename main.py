@@ -1,6 +1,7 @@
 import agent
 import speak
 import gradio as gr
+import threading
 
 def dotaz_na_karla(otazka, dummy):
     
@@ -8,8 +9,11 @@ def dotaz_na_karla(otazka, dummy):
     priloha = otazka["files"]
     
     odpoved = agent.ask(text, priloha)
-    yield odpoved
 
+    vlakno_hlasu = threading.Thread(target=speak.speak, args=(odpoved,))
+    vlakno_hlasu.start()
+    
+    yield odpoved
 
 gr.ChatInterface(fn=dotaz_na_karla, multimodal=True).launch()
 

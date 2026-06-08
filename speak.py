@@ -3,10 +3,18 @@ import io
 import numpy as np
 import sounddevice as sd
 from piper import PiperVoice
+import emoji
 
 voice = PiperVoice.load("cs_medium.onnx", "cs_medium.onnx.json")
 
-def speak(text: str):
+def ocisti_text(text: str):
+    cisty_text = emoji.replace_emoji(text, replace='')
+    return cisty_text
+
+def speak(vstup: str):
+    
+    text = ocisti_text(vstup)
+    
     buffer = io.BytesIO()
     with wave.open(buffer, "wb") as wav_file:
         voice.synthesize_wav(text, wav_file)
