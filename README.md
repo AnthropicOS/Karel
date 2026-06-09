@@ -20,7 +20,7 @@ Na backend jsme využili knihovnu Ollama s open-source modelem gemma 3.
 TTS provozuje knihovna Piper.
 
 ## Parametry
-Při testování jsme použili GPU AMD RX6700XT s 12GB VRAM, která se při načtení modelu kompletně využila i s  dalšími 2GB RAM (=celkem 14GB paměti)
+Při testování jsme použili GPU AMD RX6700XT a NVIDIA RTX3080 s 12GB VRAM, která se při načtení modelu kompletně využila i s dalšími 2GB RAM navíc (= celkem 14GB paměti)
 Jednoduché souvětí se generuje 5 - 10 sekund a spotřeba GPU při provozu je kolem 80W
 
 ## Cíl
@@ -37,7 +37,7 @@ I se pokročilejším hardwarem je model extrémně pomalý - obzvlášť při a
 Používání lokálního modelu je velice nepraktické: Malé modely působí spíš jako generátory náhodných slov a na velké silnější modely nemá běžný uživatel techniku.
 
 ## Možné vylepšní
-Bylo by možné později přidat knihovny pro analýzu PDF souborů.
+Bylo by možné později přidat knihovny pro analýzu PDF souborů. Zamýšleli jsme přidat generaci obrázků, jenže by celý package nakynul o dalších 6GB uložiště.
 
 ---
 <small>© 2026 AnthropicOS & vitek07k</small>
