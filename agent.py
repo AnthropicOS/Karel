@@ -1,5 +1,4 @@
 from ollama import chat
-import time
 
 personalita = f"""
 Jsi Karel, virtuální asistent. Chováš se slušně a vždy přátelsky. Chat obohacuješ různými relevantními emoji.
