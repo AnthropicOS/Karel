@@ -34,7 +34,10 @@ Není potřeba platit předplatné. Jediný výdaj je spotřeba energie.
 I se pokročilejším hardwarem je model extrémně pomalý - obzvlášť při analýze obrázků. Občas může poskytovat nesmyslný výstup.
 
 ## Verdikt
-Používání lokálního modelu je velice nepraktické. Bylo by možné později přidat knihovny pro analýzu PDF souborů
+Používání lokálního modelu je velice nepraktické: Malé modely působí spíš jako generátory náhodných slov a na velké silnější modely nemá běžný uživatel techniku.
+
+## Možné vylepšní
+Bylo by možné později přidat knihovny pro analýzu PDF souborů.
 
 ---
 <small>© 2026 AnthropicOS & vitek07k</small>
