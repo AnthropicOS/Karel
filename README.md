@@ -4,7 +4,7 @@ Karel je asistent běžící na LLM modelu Gemma 3 od Googlu. Pracuje převážn
 ## Instalace
 Pro funkčnost Karla je nutné [doinstalovat Ollamu](https://ollama.com/download) s modelem a Python knihovny přes PIP:
 ```
-ollama pull gemma3:12b
+ollama run gemma3:12b
 ```
 ```
 pip install -r requirements.txt
