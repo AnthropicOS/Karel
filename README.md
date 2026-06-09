@@ -1,5 +1,5 @@
 # Karel, virtuální asistent
-Karel je asistent běžící na LLM modelu Gemma 3 od googlu. Pracuje převážně s textem, ale zvládne zpracovat i obrázek.
+Karel je asistent běžící na LLM modelu Gemma 3 od Googlu. Pracuje převážně s textem, ale zvládne zpracovat i obrázek. Lze zapnout přečítání na hlas.
 
 ## Instalace
 Pro funkčnost Karla je nutné [doinstalovat Ollamu](https://ollama.com/download) s modelem a Python knihovny přes PIP:
@@ -28,7 +28,7 @@ Cílem celé práce bylo zhotovit lokálního AI Asistenta, který nahrazuje kor
 
 ### Výhody
 Model běží kompletně lokálně a offline, takže je 100% soukromý a důvěryhodný. Narozdíl od veřejných modelů, kde společnosti sbírají veškeré data uživatelů.
-Není potřeba platit předplatné 
+Není potřeba platit předplatné a žádné jiné 
 
 ### Nevýhody
 I se základním hardwarem je model extrémně pomalý - obzvlášť při analýze obrázků. Občas může poskytovat nesmyslný výstup.
