@@ -9,6 +9,10 @@ voice = PiperVoice.load("cs_medium.onnx", "cs_medium.onnx.json")
 
 def ocisti_text(text: str):
     cisty_text = emoji.replace_emoji(text, replace='')
+    cisty_text = cisty_text.replace('*', '')
+    cisty_text = cisty_text.replace('/a', '')
+    cisty_text = cisty_text.replace('(', '')
+    cisty_text = cisty_text.replace(')', '')
     return cisty_text
 
 def speak(vstup: str):
